@@ -1,4 +1,4 @@
-# Projeto com import de dados angular/html/css/bootstrap #
+# Projeto com import de dados angular e typescript#
 
 
 
