@@ -1,0 +1,30 @@
+
+<div class="container"> <!--Usando container para responsividade-->
+    <table class="table bg-light border"> <!--Aplicação de estilo-->
+        <thead> <!--Inicio da table-->
+          <tr class="table-info">
+            <th scope="col">Nome</th> <!--Usando linhas para depois acessar os atributos em baixo com o Ngfor-->
+            <th scope="col">RU</th>
+            <th scope="col"> Nome do Curso</th>
+            <th scope="col">Data de Nascimento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td>
+              <!--Cada instancia para uso dos dados do arquivo.component.ts e o loop-->
+             <tr *ngFor="let dado of dados"> {{ dado.nome }} </tr>
+          </td>
+          <td>
+            <tr *ngFor="let dado of dados" > {{ dado.ru }} </tr>
+          </td>
+          
+          <td>
+            <tr *ngFor="let dado of dados" >  {{ dado.curso }} </tr>
+          </td>
+    
+          <td>
+            <tr *ngFor="let dado of dados" >  {{ dado.nasc }} </tr>
+          </td>
+        </tbody>
+      </table>
+</div>
